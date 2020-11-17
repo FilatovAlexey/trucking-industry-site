@@ -1,0 +1,159 @@
+.head-container {
+  padding: 42px 0;
+  background-color: #fbfbfb;
+  position: relative;
+  z-index: 3;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 33px;
+  transition: all 0.2s;
+}
+
+.nav__item:hover {
+  color: #778899;
+  border-bottom: 1px solid #778899;
+}
+
+.btn-mobile--menu {
+  display: block;
+  margin-top: -18px;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background: url("../img/btn-burger.png") no-repeat;
+  background-size: contain;
+  outline: none;
+}
+.close {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/btn-close.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  outline: none;
+}
+
+
+.communication,
+.picture {
+  display: flex;
+  vertical-align: middle;
+}
+
+.communication__number {
+  display: flex;
+  flex-direction: column;
+  margin: -18px 33px 0 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.communication__number a:hover {
+  color: #778899;
+}
+
+.communication__call {
+  margin-top: -15px;
+}
+
+.whatsapp {
+  width: 48px;
+  height: 48px;
+  margin: -16px 0  0 20px  ;
+  background: url("../img/whatsapp.png") center no-repeat;
+  border-radius: 10px;
+}
+.whatsapp:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+.nav--hidden li {
+  padding: 15px 0;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.mobile--menu {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.btn-requestcall {
+  width: 208px;
+  height: 48px;
+  font-size: 16px;
+  color: #778899;
+  border: 2px solid #778899;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-requestcall:hover {
+  background: linear-gradient(to top right, #808080, #FFC0CB);
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.hidden {
+  display: none; 
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .nav--mobile {
+    display: block;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .head-container {
+    padding: 0 0 22px 0;
+  }
+  .mobile--menu {
+    width: 100%;
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+  .btn-mobile--menu {
+    margin: 0;
+    width: 25px;
+    height: 25px;
+  }
+  .number {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .call-answer {
+    display: block;
+    background: url("../img/btn-call.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 40%;
+  }
+}

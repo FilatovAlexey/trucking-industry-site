@@ -1,0 +1,122 @@
+footer {
+  padding: 80px 0;
+}
+
+.footer-nav a {
+  color: #000;
+}
+.footer-nav__item {
+  padding: 7px 0;
+}
+.footer-nav__item a:hover {
+  color: #778899;
+  border-bottom: 2px solid #778899;
+}
+
+.contact-mail,
+.contact-phone {
+  display: flex;
+  vertical-align: middle;
+  padding: 15px 0;
+}
+
+.footer-cont {
+  font-size: 24px;
+  font-style: normal;
+  margin: -5px 0 0 15px;
+}
+.footer-cont:hover {
+  color: #778899;
+}
+.number .social-net {
+  margin-top: 15px;
+}
+
+.fa-envelope,
+.fa-phone-alt {
+  color: #778899;
+}
+
+.contac {
+  margin-right: 25px;
+}
+
+.social-net {
+  margin: 30px 0 0 20px;
+}
+.social-net a {
+  background-image: url("../img/4444.png");
+  display: inline-block;
+  margin-right: 7px;
+  transition: all 0.2s ease-out;
+}
+.social-net a:hover {
+  background-position-y: -60px;
+}
+.vk {
+  background-position: -165px -10px;
+  width: 34px;
+  height: 34px;
+}
+
+.instagram {
+  background-position: -115px -10px;
+  width: 34px;
+  height: 34px;
+}
+
+.twitter {
+  background-position: -60px -10px;
+  width: 34px;
+  height: 34px;
+}
+
+.facebook {
+  background-position: -5px -10px;
+  width: 34px;
+  height: 34px;
+}
+.copyright {
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 18px;
+  background-color: #242424;
+  height: 80px;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 100px 0 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  footer {
+    padding: 45px 0 ;
+  }
+
+  .contacts {
+    margin-top: 28px;
+  }
+
+  .footer-cont {
+    font-size: 18px;
+    margin: 0 0 0 15px;
+  }
+  .footer-cont a {
+    color: #8993ad;
+  }
+  .btn-requestcall {
+    width: 100%;
+    margin: 15px 0 30px 0;
+  }
+  .copyright {
+    height: 50px;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+}

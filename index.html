@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <title>Грузоперевозки в Арзамасе</title>
+
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Грузоперевозки в Арзамасе и Нижегородской области.">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Грузоперевозки в Арзамасе">
+  <meta name="keywords" content="Грузоперевозки Арзамас">
+  <meta name="description" content="Грузоперевозки в Арзамасе и нижегородской области. Низкие цены. Ответсвенный персонал. Гарантия качества.">
+  <meta name="robots" content="index, follow">
+
+  <meta name="DC.Title" content="Грузоперевозки Арзамас">
+  <meta name="DC.Subject" content="Грузоперевозки, Грузовое такси, Арзамас, Нижегородская область">
+  <meta name="DC.Description" content="Грузоперевозки в Арзамасе и Нижегородской области, низние цены, ответвенный персонал.">
+  <meta name="DC.Date" content="2020-04-23">
+  <meta name="DC.Type" content="Service">
+  <meta name="DC.Format" content="text/html">
+  <meta name="DC.Identifier" content="https://www.gruzoperevozki-arz.ru/">
+  <meta name="DC.Language" content="ru-RU">
+  <meta name="DC.Coverage" content="г.Арзамас, Нижегородская область, Россия ID: 1052312">
+
+
+  <script src="https://kit.fontawesome.com/f360a6491a.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body itemscope itemtype="http://schema.org/Organization">
+  <header>
+    <div class="head-container">
+      <div class="fixed-container">
+        <div class="mobile--menu hidden">
+          <button class="btn-mobile--menu" aria-label="Мобильное меню"></button>
+          <div class="number"><a href="tel:+7(987)746-74-48">+7 (987) 746-74-48</a></div>
+          <button class="call-answer show-popup" rel="call-ord" aria-label="call"></button>
+        </div>
+        <div class="menu">
+          <div class="nav--mobile hidden">
+            <button class="btn-mobile--menu" aria-label="Мобильное меню"></button>
+          </div>
+          <nav>
+            <ul class="nav">
+              <li class="nav__item"><a class="nav__link" href="#services">О нас</a></li>
+              <li class="nav__item"><a class="nav__link" href="#coast">Стоимость</a></li>
+            </ul>
+          </nav>
+          <div class="communication">
+            <div class="communication__number">
+              <a href="tel:+7(987)746-74-48">+7 (987) 746-74-48</a>
+              <a href="tel:+7(910)387-62-75">+7 (910) 387-62-75</a>
+            </div>
+            <div class="communication__call"><button class="btn-requestcall show-popup" rel="call-ord">Заказать
+                звонок</button></div>
+            <a href="https://wa.me/79877467448" class="whatsapp"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Попап отправки формы -->
+    <div class="popup call-ord">
+      <a class="close" href="#">Close</a>
+      <h2 class="popup-title">Заказать обратный звонок</h2>
+      <div class="popup-subtitle">Введите ваше имя и&nbsp;телефон, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее
+        время.</div>
+      <form class="popup__submit" action="mail.php" method="POST">
+        <fieldset class="popup-form">
+          <label for="fullName" class="form-text">Введите ваше имя:</label>
+          <input id="fullName" class="input1" type="text" name="bio" required>
+
+          <label for="phone" class="form-text">Введите ваш номер телефона:</label>
+          <input id="phone" class="input1 phone" type="text" name="phone" required>
+        </fieldset>
+        <input type="submit" class="btn-requestcall btn-submit" value="Заказать звонок">
+      </form>
+    </div>
+
+    <div class="popup call-shipping">
+      <a class="close" href="#">Close</a>
+      <h2 class="popup-title">Заказать грузоперевозку</h2>
+      <div class="popup-subtitle">Введите ваше имя и&nbsp;телефон, а&nbsp;так&nbsp;же адрес отправления и&nbsp;доставки.
+        Оператор свяжется с&nbsp;вами в&nbsp;ближайшее время.</div>
+      <form class="popup__submit" action="mail.php" method="POST">
+        <fieldset class="popup-form">
+          <label for="fullName1" class="form-text">Введите ваше имя:</label>
+          <input id="fullName1" class="input1" type="text" name="bio" required>
+
+          <label for="phone1" class="form-text">Введите ваш номер телефона:</label>
+          <input id="phone1" class="input1 phone" type="text" name="phone" required>
+
+          <label for="from" class="form-text">Адрес подачи:</label>
+          <input id="from" class="input1 widthinput" type="text" name="from" placeholder="Откуда" required>
+
+          <label for="to" class="form-text">Адрес доставки:</label>
+          <input id="to" class="input1 widthinput" type="text" name="to" placeholder="Куда" required>
+        </fieldset>
+        <input type="submit" class="btn-requestcall btn-submit" value="Заказать грузоперевозку">
+      </form>
+    </div>
+    <!-- Попап успешной отправки формы -->
+    <div class="popup success">
+      <a class="close" href="#">Close</a>
+      <h2 class="success-title">
+        Спасибо за вашу заявку!
+      </h2>
+      <div class="success-subtitle">
+        Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время.
+      </div>
+    </div>
+    <div class="fixed-container">
+      <nav>
+        <ul class="nav--hidden hidden">
+          <li class="nav__item"><a class="nav__link" href="#services">О нас</a></li>
+
+          <li class="nav__item"><a class="nav__link" href="#coast">Стоимость</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="top-section">
+      <div class="fixed-container container-mobile">
+        <figure class="top-section__wrap">
+          <div class="top-section__pic">
+            <img src="img/photo.png" alt="Грузоперевозки в Арзамасе и Нижегородской области" itemprop="image">
+          </div>
+
+          <figcaption class="top-section__txt">
+            <hgroup class="top-section__hgroup">
+              <h1 class="top-section__title" itemprop="name">Грузоперевозки в&nbsp;Арзамасе и&nbsp;Нижегородской области
+              </h1>
+
+              <h2 class="top-section__subtitle">
+                <span>От 350 рублей.</span>
+                <span>Прием заказов круглосуточно.</span>
+              </h2>
+            </hgroup>
+
+            <a class=" btn-all btn-center show-popup" rel="call-shipping" href="#about"><span class="btn-text ">Заказать
+                перевозку</span></a>
+
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="fixed-container">
+        <a name="services">
+          <h2 class="examples-title">
+            Выбирайте нас
+          </h2>
+        </a>
+        <div class="advantage">
+          <div class="advantage__item adv-first">
+            <div class="advantage__item-img">
+              <img src="img/people.png" alt="Работаем с организациями">
+            </div>
+            <p class="all__item-text dec-text">
+              Работаем с&nbsp;частными лицами.
+            </p>
+          </div>
+          <div class="advantage__item adv-first">
+            <div class="advantage__item-img">
+              <img src="img/truck.png" alt="Максимальная грузоподьемность 2.5 тонны">
+            </div>
+            <p class="all__item-text dec-text">
+              Грузоподьемность до 2х тонн.
+            </p>
+          </div>
+          <div class="advantage__item adv-first">
+            <div class="advantage__item-img">
+              <img src="img/lowprice.png" alt="Низкие цены">
+            </div>
+            <p class="all__item-text dec-text">
+              Приемлемые цены.
+            </p>
+          </div>
+          <div class="advantage__item adv-first">
+            <div class="advantage__item-img">
+              <img src="img/terminal.png" alt="Удобная форма оплаты">
+            </div>
+            <div class="all__item-text dec-text">
+              Удобная форма оплаты.
+            </div>
+          </div>
+          <div class="advantage__item">
+            <div class="advantage__item-img">
+              <img src="img/sale.png" alt="Программирование">
+            </div>
+            <div class="all__item-text dec-text">
+              Скидки для постоянных клиентов.
+            </div>
+          </div>
+          <div class="advantage__item">
+            <div class="advantage__item-img">
+              <img src="img/person.png" alt="Исправление верстки">
+            </div>
+            <div class="all__item-text dec-text">
+              Отвественный и опытный персонал.
+            </div>
+          </div>
+        </div>
+        <a class=" btn-all btn-order" href="#coast"><span class="btn-text">Узнать стоимость</span></a>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="about-price">
+        <a name="coast">
+          <h2 class="about-price__title">
+            Грузоперевозки по&nbsp;Арзамасу от&nbsp;350 рублей или от&nbsp;300руб/час*
+          </h2>
+        </a>
+        <p class="about-price__asterics">* Стоимость перевозки расчитывается индивидуально в&nbsp;зависимости
+          от&nbsp;километража.
+        </p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="fixed-container flex-container">
+      <ul class="footer-nav">
+        <li class="footer-nav__item"><a href="#services">О нас</a></li>
+        <li class="footer-nav__item"><a href="#coast">Стоимость</a></li>
+      </ul>
+      <address class="contacts">
+        <div class="contact-phone">
+          <i class="fas fa-phone-alt" aria-label="Наш телефон"></i>
+          <div class="footer-cont"><a href="tel:+7(987)746-74-48" itemprop="telephone">+7 (987) 746-74-48</a></div>
+        </div>
+        <div class="contact-mail">
+          <i class="fas fa-envelope" aria-label="Наша почта"></i>
+          <div class="footer-cont"><a href="mailto:lyr1999@mail.ru">lyr1999@mail.ru</a></div>
+        </div>
+
+      </address>
+      <address class="contac">
+        <button class="btn-requestcall show-popup" rel="call-ord">Заказать звонок</button>
+        <div class="social-net">
+          <a href="https://vk.com/raby1999" class="vk" aria-label="Наш вконтакте"></a>
+          <a href="https://www.instagram.com/perevozki_arz" class="instagram" aria-label="Наш instagram"
+            itemprop="address"></a>
+        </div>
+      </address>
+
+    </div>
+
+  </footer>
+  <small class="copyright">
+    © Грузоперевозки в Арзамасе, 2016 – 2020
+  </small>
+</body>
+
+</html>
